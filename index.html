@@ -25,16 +25,16 @@
        PRESETS DE COULEURS & THEMES DYNAMIQUES
        ======================================================== */
     :root, [data-theme="preset-d"] {
-      --bg: #1F1D3A;
-      --surface: #2A2750;
-      --surface-muted: #353265;
-      --border: rgba(149, 128, 255, 0.22);
-      --border-hover: rgba(149, 128, 255, 0.55);
-      --accent: #9580FF;
-      --accent-rgb: 149, 128, 255;
-      --text: #F4F3FA;
-      --text-muted: #A8A4C6;
-      --theme-name: "Aura Digitale";
+      --bg: #070D1B;
+      --surface: #0E172E;
+      --surface-muted: #172445;
+      --border: rgba(59, 130, 246, 0.28);
+      --border-hover: rgba(59, 130, 246, 0.7);
+      --accent: #3B82F6;
+      --accent-rgb: 59, 130, 246;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --theme-name: "Bleu Royal Décisionnel";
     }
 
     [data-theme="preset-b"] {
@@ -164,7 +164,7 @@
   </style>
 </head>
 
-<body class="selection:bg-purple-500/30 selection:text-purple-200 overflow-x-hidden antialiased">
+<body class="selection:bg-blue-500/30 selection:text-blue-200 overflow-x-hidden antialiased">
 
   <!-- Grain de texture discret haut de gamme -->
   <div class="pointer-events-none fixed inset-0 z-40 noise-layer opacity-60"></div>
@@ -310,27 +310,31 @@
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
         <!-- Left: Présentation principale (7 cols) -->
-        <div class="lg:col-span-7 space-y-6">
+        <div class="lg:col-span-7 space-y-5">
           
-          <div class="space-y-2 mb-3">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full card-theme text-xs font-mono font-bold tracking-wide" style="color: var(--accent); border-color: var(--border);">
-              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-              <span>Valorisation des Données • Stratégie IA • Transformation Analytique</span>
+          <!-- 1. NOM DE SOULEYMANE ALPHA BAH TOUT EN HAUT -->
+          <h1 class="font-title text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+            Souleymane <span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, var(--text) 30%, #3B82F6 100%);">Alpha BAH</span>
+          </h1>
+
+          <!-- 2. TITRE EN MAJUSCULE AVEC POINT VERT -->
+          <div class="space-y-2">
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full card-theme text-xs font-mono font-bold tracking-wider uppercase shadow-md" style="color: #60A5FA; border-color: rgba(59, 130, 246, 0.4); background: rgba(59, 130, 246, 0.08);">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse ring-4 ring-emerald-500/20 shrink-0"></span>
+              <span>VALORISATION DES DONNÉES • STRATÉGIES IA • TRANSFORMATION ANALYTIQUE</span>
             </div>
+            
             <div>
               <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full card-theme text-[11px] font-mono text-theme-muted">
-                <span class="w-2 h-2 rounded-full animate-pulse" style="background: var(--accent);"></span>
+                <span class="w-2 h-2 rounded-full animate-pulse" style="background: #3B82F6;"></span>
                 <span>Disponible pour mandats stratégiques & accompagnement • Montréal / International</span>
               </div>
             </div>
           </div>
 
-          <h1 class="font-title text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-            Souleymane <span class="text-transparent bg-clip-text" style="background-image: linear-gradient(135deg, var(--text) 30%, var(--accent) 100%);">Alpha BAH</span>
-          </h1>
-
-          <div class="space-y-1">
-            <p class="font-title text-xl sm:text-2xl font-bold italic text-theme-accent">
+          <!-- 3. TITRES PROFESSIONNELS -->
+          <div class="space-y-1.5 pt-1">
+            <p class="font-title text-xl sm:text-2xl font-bold italic" style="color: #60A5FA;">
               Data Engineer & Analyste BI & Orchestrateur de solutions IA
             </p>
             <p class="text-xs sm:text-sm font-mono italic text-theme-muted">
@@ -338,7 +342,8 @@
             </p>
           </div>
 
-          <p class="text-base sm:text-lg text-theme-muted leading-relaxed max-w-2xl">
+          <!-- 4. SYNTHÈSE PROFIL -->
+          <p class="text-base text-theme-muted leading-relaxed max-w-2xl">
             Profil hybride d'exception alliant <strong class="text-white">Informatique décisionnelle</strong>, 
             <strong class="text-white">Intelligence Artificielle</strong>, 
             <strong class="text-white">Statistique appliquée</strong> et <strong class="text-white">Économie</strong>. 
@@ -458,38 +463,38 @@
                   <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
                     
                     <!-- 1. Power BI -->
-                    <button onclick="openTechModal('power-bi')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-amber-400 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise Power BI">
+                    <button onclick="openTechModal('power-bi')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-blue-400 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise Power BI">
                       <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M7 17h2v-4H7v4zm4 0h2V7h-2v10zm4 0h2v-7h-2v7zM4 3h16c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1z"/>
                       </svg>
-                      <span class="group-hover:text-amber-400 transition-colors">Power BI</span>
+                      <span class="group-hover:text-blue-400 transition-colors">Power BI</span>
                     </button>
 
                     <!-- 2. Databricks -->
-                    <button onclick="openTechModal('databricks')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-red-400 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise Databricks">
+                    <button onclick="openTechModal('databricks')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-blue-400 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise Databricks">
                       <svg class="w-4 h-4 text-red-400" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 2L2 7l10 5 10-5-10-5zm0 9L4.5 7.25 12 11l7.5-3.75L12 11zm0 2.5L3 8.8v6.4l9 4.8 9-4.8V8.8l-9 4.7z"/>
                       </svg>
-                      <span class="group-hover:text-red-400 transition-colors">Databricks</span>
+                      <span class="group-hover:text-blue-400 transition-colors">Databricks</span>
                     </button>
 
                     <!-- 3. Microsoft Fabric -->
-                    <button onclick="openTechModal('fabric')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-cyan-400 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise Microsoft Fabric">
+                    <button onclick="openTechModal('fabric')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-blue-400 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise Microsoft Fabric">
                       <svg class="w-4 h-4 text-cyan-400" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M4 4h7v7H4V4zm9 0h7v7h-7V4zm-9 9h7v7H4v-7zm9 0h7v7h-7v-7z"/>
                       </svg>
-                      <span class="group-hover:text-cyan-400 transition-colors">Microsoft Fabric</span>
+                      <span class="group-hover:text-blue-400 transition-colors">Microsoft Fabric</span>
                     </button>
 
                     <!-- 4. Snowflake -->
-                    <button onclick="openTechModal('snowflake')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-sky-300 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise Snowflake">
-                      <svg class="w-4 h-4 text-sky-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <button onclick="openTechModal('snowflake')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-blue-400 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise Snowflake">
+                      <svg class="w-4 h-4 text-sky-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
                         <line x1="12" y1="2" x2="12" y2="22"/>
                         <line x1="3.5" y1="7" x2="20.5" y2="17"/>
                         <line x1="3.5" y1="17" x2="20.5" y2="7"/>
                         <circle cx="12" cy="12" r="3" fill="currentColor"/>
                       </svg>
-                      <span class="group-hover:text-sky-300 transition-colors">Snowflake</span>
+                      <span class="group-hover:text-blue-400 transition-colors">Snowflake</span>
                     </button>
 
                     <!-- 5. Azure (IA & ML) -->
@@ -500,7 +505,39 @@
                       <span class="group-hover:text-blue-400 transition-colors">Azure (IA & ML)</span>
                     </button>
 
-                    <!-- 6. Python -->
+                    <!-- 6. Oracle (NOUVEAU) -->
+                    <button onclick="openTechModal('oracle')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-red-500 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise Oracle Database">
+                      <svg class="w-4 h-4 text-red-500" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.5 12c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4zm-4-6C7.8 6 4 7.8 4 10v4c0 2.2 3.8 4 8.5 4s8.5-1.8 8.5-4v-4c0-2.2-3.8-4-8.5-4z"/>
+                      </svg>
+                      <span class="group-hover:text-red-400 transition-colors">Oracle</span>
+                    </button>
+
+                    <!-- 7. Claude (Anthropic) (NOUVEAU) -->
+                    <button onclick="openTechModal('claude')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-amber-500 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher l'intégration de Claude">
+                      <svg class="w-4 h-4 text-amber-500" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                      </svg>
+                      <span class="group-hover:text-amber-400 transition-colors">Claude</span>
+                    </button>
+
+                    <!-- 8. ChatGPT / OpenAI (NOUVEAU) -->
+                    <button onclick="openTechModal('chatgpt')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-emerald-400 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher l'intégration ChatGPT / OpenAI">
+                      <svg class="w-4 h-4 text-teal-400" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm3.6 13.7L12 13.8l-3.6 1.9.7-4-2.9-2.8 4-.6L12 4.7l1.8 3.6 4 .6-2.9 2.8z"/>
+                      </svg>
+                      <span class="group-hover:text-teal-400 transition-colors">ChatGPT</span>
+                    </button>
+
+                    <!-- 9. n8n (Automatisations solutions IA) (NOUVEAU) -->
+                    <button onclick="openTechModal('n8n')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-pink-500 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher les automatisations de solutions IA n8n">
+                      <svg class="w-4 h-4 text-pink-400" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M4 8h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM7 14h10v2H7z"/>
+                      </svg>
+                      <span class="group-hover:text-pink-400 transition-colors">n8n (Automatisations IA)</span>
+                    </button>
+
+                    <!-- 10. Python -->
                     <button onclick="openTechModal('python')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-yellow-400 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise Python">
                       <svg class="w-4 h-4 text-yellow-400" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M11.9 2c-3.7 0-4.7 1.6-4.7 3.2v2.4h9.5V8H7.2C4 8 2 10.2 2 13.4c0 3.7 2.1 5.6 5.2 5.6h1.7v-2.5c0-1.7 1.4-3.1 3.1-3.1h4.8c1.3 0 2.4-1.1 2.4-2.4V5.2C19.2 3.6 15.6 2 11.9 2zm-1.8 1.9c.5 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .5-1 1-1zm3.8 18.2c3.7 0 4.7-1.6 4.7-3.2v-2.4H9.1V16h9.5c3.2 0 5.2-2.2 5.2-5.4 0-3.7-2.1-5.6-5.2-5.6h-1.7v2.5c0 1.7-1.4 3.1-3.1 3.1H9c-1.3 0-2.4 1.1-2.4 2.4v5.8c0 1.6 3.6 3.2 7.3 3.2zm1.8-1.9c-.5 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.5 1-1 1z"/>
@@ -508,7 +545,7 @@
                       <span class="group-hover:text-yellow-400 transition-colors">Python</span>
                     </button>
 
-                    <!-- 7. SQL -->
+                    <!-- 11. SQL -->
                     <button onclick="openTechModal('sql')" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full card-theme hover:border-emerald-400 text-xs font-mono font-medium transition-all hover:scale-105 group" title="Cliquer pour afficher la maîtrise SQL">
                       <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <ellipse cx="12" cy="5" rx="9" ry="3"/>
@@ -1365,7 +1402,7 @@
        MODAL 1 : APERÇU RECRUTEUR (FORMAT A4 IMPRIMABLE)
        (INNOVATION CLÉ INSPIRÉE DU PORTFOLIO ANTOINE GUENNE)
        ======================================================== -->
-  <div id="cv-modal" class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
+  <div id="cv-modal" class="hidden fixed inset-0 z-[100] bg-black/80 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
     <div class="relative w-full max-w-4xl bg-white text-slate-900 rounded-[2rem] p-8 sm:p-12 shadow-2xl my-8">
       
       <!-- Actions Bar Modal -->
@@ -1661,10 +1698,13 @@
       observer.observe(skillsSection);
     }
 
-    // 4. MODAL CV RECRUTEUR FORMAT A4
+        // 4. MODAL CV RECRUTEUR FORMAT A4
     function openCvModal() {
-      document.getElementById('cv-modal').classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
+      const modal = document.getElementById('cv-modal');
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
     }
 
     function closeCvModal() {
@@ -1746,6 +1786,55 @@
           'Modélisation de séries chronologiques et algorithmes de classification prédictive'
         ],
         caseStudy: 'Développement de scripts d'analyse statistique prédictive et automatisation des flux de données corporatifs.'
+      },
+      ,
+      'oracle': {
+        title: 'Oracle Database & PL/SQL Avancé',
+        badge: 'Expert (95%) • 12+ ans d'expérience',
+        icon: '<svg class="w-6 h-6 text-red-500" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 12c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4zm-4-6C7.8 6 4 7.8 4 10v4c0 2.2 3.8 4 8.5 4s8.5-1.8 8.5-4v-4c0-2.2-3.8-4-8.5-4z"/></svg>',
+        role: 'Administration, structuration et optimisation des bases de données d'entreprise hautement critiques.',
+        skills: [
+          'Écriture de procédures stockées PL/SQL complexes, packages, triggers et fonctions analytiques',
+          'Tuning de requêtes lourdes, partitionnement de tables volumineuses et optimisation des index',
+          'Gestion de la haute disponibilité, réplication de données et intégrité référentielle stricte'
+        ],
+        caseStudy: 'Gestion et maintenance d'entrepôts de données Oracle supportant des millions d'écritures transactionnelles et financières.'
+      },
+      'claude': {
+        title: 'Claude (Anthropic) & IA Générative',
+        badge: 'Expert (94%) • Orchestration & Prompts Avancés',
+        icon: '<svg class="w-6 h-6 text-amber-500" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>',
+        role: 'Intégration de modèles de raisonnement complexe pour l'analyse documentaire et la synthèse analytique.',
+        skills: [
+          'Conception de prompts structurés (Prompt Engineering), protocoles d'analyse et réduction des hallucinations',
+          'Extraction automatisée de KPIs et insights financiers à partir de rapports non structurés de plusieurs centaines de pages',
+          'Mise en place de garde-fous éthiques et conformité aux chartes de sécurité des données'
+        ],
+        caseStudy: 'Orchestration d'assistants d'analyse stratégique accélérant de 75% l'audit de conformité et l'analyse documentaire.'
+      },
+      'chatgpt': {
+        title: 'ChatGPT & OpenAI APIs',
+        badge: 'Expert (93%) • Intégration Systèmes & LLMs',
+        icon: '<svg class="w-6 h-6 text-teal-400" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm3.6 13.7L12 13.8l-3.6 1.9.7-4-2.9-2.8 4-.6L12 4.7l1.8 3.6 4 .6-2.9 2.8z"/></svg>',
+        role: 'Automatisation intelligente des processus métiers et génération de code analytique (SQL/DAX/Python).',
+        skills: [
+          'Intégration d'OpenAI APIs dans les pipelines décisionnels et workflows corporatifs',
+          'Automatisation de la génération de requêtes DAX complexes et de documentation de dictionnaires de données',
+          'Systèmes RAG (Retrieval-Augmented Generation) connectés aux bases de connaissances internes'
+        ],
+        caseStudy: 'Déploiement d'un copilote interne pour les analystes BI permettant l'interrogation en langage naturel des bases de données.'
+      },
+      'n8n': {
+        title: 'n8n — Orchestration & Automatisations IA',
+        badge: 'Expert (96%) • Flux de Travail Intelligents',
+        icon: '<svg class="w-6 h-6 text-pink-400" viewBox="0 0 24 24" fill="currentColor"><path d="M4 8h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM7 14h10v2H7z"/></svg>',
+        role: 'Chef d'orchestre des solutions IA : automatisation fluide des flux de données et intégration des agents IA.',
+        skills: [
+          'Conception de pipelines d'automatisation interconnectant bases de données, APIs IA, webhooks et messageries',
+          'Intégration d'agents autonomes avec mémoire contextuelle et déclencheurs intelligents',
+          'Surveillance des flux, gestion robuste des erreurs et exécution containerisée sécurisée'
+        ],
+        caseStudy: 'Automatisation complète de la chaîne d'ingestion, d'enrichissement IA et de distribution de rapports exécutifs quotidiens.'
       },
       'sql': {
         title: 'SQL Avancé & Systèmes Relationnels',
